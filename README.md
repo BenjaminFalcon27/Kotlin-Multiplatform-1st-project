@@ -15,3 +15,6 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+
+Example of displaying:
+![pokmon](https://github.com/user-attachments/assets/21e16641-c596-455f-b896-bd1acf68b158)
