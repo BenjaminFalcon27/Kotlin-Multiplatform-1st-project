@@ -4,24 +4,7 @@
             "outputFile": "com.mastercyber.tp5.composeApp-mergeDebugResources-42:/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9ed58013a71c913e700baa8d95fc10a5/transformed/core-1.13.1/res/values-b+sr+Latn/values-b+sr+Latn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,352,456,560,665,781",
-                        "endColumns": "97,101,96,103,103,104,115,100",
-                        "endOffsets": "148,250,347,451,555,660,776,877"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,24",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,203,305,402,506,610,715,2115",
-                        "endColumns": "97,101,96,103,103,104,115,100",
-                        "endOffsets": "198,300,397,501,605,710,826,2211"
-                    }
-                },
-                {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9af79e149a2b69a4e568be455f84a088/transformed/ui-release/res/values-b+sr+Latn/values-b+sr+Latn.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/7f2d598f4dfd06a15f56e2288ef87f74/transformed/ui-release/res/values-b+sr+Latn/values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/4757b3d4c4a33216fab76668cbda511c/transformed/foundation-release/res/values-b+sr+Latn/values-b+sr+Latn.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/c9823b696203220b5e5b834c5cb7c3aa/transformed/foundation-release/res/values-b+sr+Latn/values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2483,2573",
                         "endColumns": "89,91",
                         "endOffsets": "2568,2660"
+                    }
+                },
+                {
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/990d766784070d74fdf176a659c76bac/transformed/core-1.13.1/res/values-b+sr+Latn/values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,352,456,560,665,781",
+                        "endColumns": "97,101,96,103,103,104,115,100",
+                        "endOffsets": "148,250,347,451,555,660,776,877"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,24",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,305,402,506,610,715,2115",
+                        "endColumns": "97,101,96,103,103,104,115,100",
+                        "endOffsets": "198,300,397,501,605,710,826,2211"
                     }
                 }
             ]

@@ -4,7 +4,7 @@
             "outputFile": "com.mastercyber.tp5.composeApp-mergeDebugResources-42:/values-bs/values-bs.xml",
             "map": [
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9ed58013a71c913e700baa8d95fc10a5/transformed/core-1.13.1/res/values-bs/values-bs.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/990d766784070d74fdf176a659c76bac/transformed/core-1.13.1/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/4757b3d4c4a33216fab76668cbda511c/transformed/foundation-release/res/values-bs/values-bs.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,145",
-                        "endColumns": "89,91",
-                        "endOffsets": "140,232"
-                    },
-                    "to": {
-                        "startLines": "28,29",
-                        "startColumns": "4,4",
-                        "startOffsets": "2486,2576",
-                        "endColumns": "89,91",
-                        "endOffsets": "2571,2663"
-                    }
-                },
-                {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9af79e149a2b69a4e568be455f84a088/transformed/ui-release/res/values-bs/values-bs.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/7f2d598f4dfd06a15f56e2288ef87f74/transformed/ui-release/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "830,931,1019,1113,1212,1298,1375,1467,1559,1644,1725,1811,1884,1961,2040,2218,2298,2368",
                         "endColumns": "100,87,93,98,85,76,91,91,84,80,85,72,76,78,76,79,69,117",
                         "endOffsets": "926,1014,1108,1207,1293,1370,1462,1554,1639,1720,1806,1879,1956,2035,2112,2293,2363,2481"
+                    }
+                },
+                {
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/c9823b696203220b5e5b834c5cb7c3aa/transformed/foundation-release/res/values-bs/values-bs.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,145",
+                        "endColumns": "89,91",
+                        "endOffsets": "140,232"
+                    },
+                    "to": {
+                        "startLines": "28,29",
+                        "startColumns": "4,4",
+                        "startOffsets": "2486,2576",
+                        "endColumns": "89,91",
+                        "endOffsets": "2571,2663"
                     }
                 }
             ]

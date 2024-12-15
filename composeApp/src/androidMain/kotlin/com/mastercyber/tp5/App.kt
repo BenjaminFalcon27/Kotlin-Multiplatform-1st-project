@@ -12,7 +12,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-
 import tp5.composeapp.generated.resources.Res
 import tp5.composeapp.generated.resources.compose_multiplatform
 
@@ -21,15 +20,23 @@ import tp5.composeapp.generated.resources.compose_multiplatform
 fun App() {
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
+        var name by remember { mutableStateOf<String?>(null) }
+
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = { showContent = !showContent }) {
                 Text("Click me!")
             }
+
             AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
+                LaunchedEffect(showContent) {
+                    if (showContent) {
+                        name = Greeting().fetchPokemon()
+                    }
+                }
+
                 Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
+                    Text("Compose: ${name ?: "Loading..."}")
                 }
             }
         }

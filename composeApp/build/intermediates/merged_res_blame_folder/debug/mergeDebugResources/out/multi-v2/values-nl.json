@@ -4,7 +4,24 @@
             "outputFile": "com.mastercyber.tp5.composeApp-mergeDebugResources-42:/values-nl/values-nl.xml",
             "map": [
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9af79e149a2b69a4e568be455f84a088/transformed/ui-release/res/values-nl/values-nl.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/990d766784070d74fdf176a659c76bac/transformed/core-1.13.1/res/values-nl/values-nl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,157,259,359,459,566,670,789",
+                        "endColumns": "101,101,99,99,106,103,118,100",
+                        "endOffsets": "152,254,354,454,561,665,784,885"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,24",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,207,309,409,509,616,720,2102",
+                        "endColumns": "101,101,99,99,106,103,118,100",
+                        "endOffsets": "202,304,404,504,611,715,834,2198"
+                    }
+                },
+                {
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/7f2d598f4dfd06a15f56e2288ef87f74/transformed/ui-release/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/4757b3d4c4a33216fab76668cbda511c/transformed/foundation-release/res/values-nl/values-nl.xml",
+                    "source": "/home/benji/.gradle/caches/8.9/transforms/c9823b696203220b5e5b834c5cb7c3aa/transformed/foundation-release/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2477,2563",
                         "endColumns": "85,85",
                         "endOffsets": "2558,2644"
-                    }
-                },
-                {
-                    "source": "/home/benji/.gradle/caches/8.9/transforms/9ed58013a71c913e700baa8d95fc10a5/transformed/core-1.13.1/res/values-nl/values-nl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,157,259,359,459,566,670,789",
-                        "endColumns": "101,101,99,99,106,103,118,100",
-                        "endOffsets": "152,254,354,454,561,665,784,885"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,24",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,207,309,409,509,616,720,2102",
-                        "endColumns": "101,101,99,99,106,103,118,100",
-                        "endOffsets": "202,304,404,504,611,715,834,2198"
                     }
                 }
             ]
