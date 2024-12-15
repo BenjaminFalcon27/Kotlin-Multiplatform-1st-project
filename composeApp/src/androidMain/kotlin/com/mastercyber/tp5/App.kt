@@ -1,44 +1,52 @@
 package com.mastercyber.tp5
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material.Button
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import org.jetbrains.compose.resources.painterResource
+import android.graphics.BitmapFactory
+import androidx.compose.ui.graphics.asImageBitmap
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import tp5.composeapp.generated.resources.Res
-import tp5.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
 fun App() {
     MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
+        var nameAndImage by remember { mutableStateOf(Pair<String?, ByteArray?>(null, null)) }
         var name by remember { mutableStateOf<String?>(null) }
+        var image by remember { mutableStateOf<ByteArray?>(null) }
 
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-            Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
+        LaunchedEffect(Unit) {
+            nameAndImage = Pokemon().fetchPokemonNameAndImage()
+            name = nameAndImage.first
+            image = nameAndImage.second
+        }
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = androidx.compose.foundation.layout.Arrangement.Center
+        ) {
+            image?.let {
+                val bitmap = BitmapFactory.decodeByteArray(it, 0, it.size)
+                Image(
+                    bitmap = bitmap.asImageBitmap(),
+                    contentDescription = "Image of a Pokemon",
+                    modifier = Modifier.fillMaxWidth(0.7f)
+                )
             }
-
-            AnimatedVisibility(showContent) {
-                LaunchedEffect(showContent) {
-                    if (showContent) {
-                        name = Pokemon().fetchPokemon()
-                    }
-                }
-
-                Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: ${name ?: "Loading..."}")
-                }
-            }
+            Text(
+                text = name ?: "Loading...",
+                style = MaterialTheme.typography.h5,
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
         }
     }
 }

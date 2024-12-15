@@ -19,13 +19,25 @@ class Pokemon {
         }
     }
 
-    suspend fun fetchPokemon(): String? {
+    suspend fun fetchPokemonName(): String? {
         val random = (1..1025).random()
         return try {
             val response: Pokemon = client.get("https://tyradex.vercel.app/api/v1/pokemon/$random").body()
             response.name?.fr ?: "Unknown"
         } catch (e: Exception) {
             "Unknown"
+        } finally {
+            client.close()
+        }
+    }
+
+    suspend fun fetchPokemonNameAndImage(): Pair<String?, ByteArray?> {
+        val random = (1..1025).random()
+        return try {
+            val response: Pokemon = client.get("https://tyradex.vercel.app/api/v1/pokemon/$random").body()
+            response.name?.fr to client.get(response.sprites?.regular ?: "").body()
+        } catch (e: Exception) {
+            "Unknown" to null
         } finally {
             client.close()
         }
