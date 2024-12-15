@@ -30,7 +30,7 @@ fun App() {
             AnimatedVisibility(showContent) {
                 LaunchedEffect(showContent) {
                     if (showContent) {
-                        name = Greeting().fetchPokemon()
+                        name = Pokemon().fetchPokemon()
                     }
                 }
 
